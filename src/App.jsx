@@ -44,15 +44,13 @@ function App() {
   }, [])
 
   const serieOptions = [
-    'Educação Infantil',
+    'Maternal II', 'Maternal III', 'Grupo IV', 'Grupo V',
     '1º ano', '2º ano', '3º ano', '4º ano', '5º ano',
-    '6º ano', '7º ano', '8º ano', '9º ano',
-    '1ª série - Ensino Médio',
-    '2ª série - Ensino Médio',
-    '3ª série - Ensino Médio'
+    '6º ano', '7º ano', '8º ano', '9º ano'
   ]
 
-  const turnoOptions = ['Matutino', 'Vespertino', 'Integral']
+
+  const turnoOptions = ['Matutino', 'Vespertino']
 
   const addStudent = () => {
     if (students.length < 3) {
