@@ -588,7 +588,7 @@ function App() {
                   
                   <div className="bg-blue-50 p-4 rounded-2xl">
                     <p className="text-sm text-blue-800">
-                      Após o envio, entraremos em contato em até 24h para confirmar todos os detalhes.
+                      Após o envio, entraremos em contato para confirmar todos os detalhes.
                     </p>
                   </div>
                 </div>
