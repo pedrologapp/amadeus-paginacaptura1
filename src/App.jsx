@@ -146,7 +146,7 @@ function App() {
       // Simular sucesso na validação
       return true
       
-      /* Código real para produção:
+      Código real para produção:
       const response = await fetch('WEBHOOK_N8N_VALIDACAO_URL', {
         method: 'POST',
         headers: {
@@ -162,7 +162,7 @@ function App() {
       } else {
         throw new Error('Erro na validação')
       }
-      */
+      
     } catch (error) {
       console.error('Erro na validação:', error)
       return false
