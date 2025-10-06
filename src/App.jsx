@@ -435,7 +435,7 @@ function App() {
                         <p className="text-red-500 text-sm mt-1">{errors.responsible_celular}</p>
                       )}
                     </div>
-                    
+                   {/* 
                     <div>
                       <Label htmlFor="responsible-email">E-mail *</Label>
                       <Input
@@ -450,12 +450,7 @@ function App() {
                         <p className="text-red-500 text-sm mt-1">{errors.responsible_email}</p>
                       )}
                     </div>
-                  </div>
-
-                  <div className="bg-blue-50 p-4 rounded-2xl">
-                    <p className="text-sm text-blue-800">
-                      Vamos validar se o número do WhatsApp está correto antes de prosseguir.
-                    </p>
+                   */}
                   </div>
                 </div>
               )}
