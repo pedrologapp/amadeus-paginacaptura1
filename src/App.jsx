@@ -341,9 +341,11 @@ function App() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             {/* TODO: Inserir logo do Colégio Amadeus aqui */}
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
-              CA
-            </div>
+         <img 
+              src="/logo-colegio-amadeus.png" 
+              alt="Colégio Amadeus" 
+              className="w-12 h-12 object-contain"
+            />
             <span className="text-xl font-bold text-gray-800">Centro Educacional Amadeus</span>
           </div>
           
