@@ -229,7 +229,7 @@ function App() {
       }
       setIsSuccess(true)
       
-      /* Código real para produção:
+
       const response = await fetch('WEBHOOK_N8N_URL', {
         method: 'POST',
         headers: {
@@ -246,7 +246,7 @@ function App() {
       } else {
         throw new Error('Erro no envio')
       }
-      */
+
     } catch (error) {
       alert('Ops! Algo deu errado. Tente novamente ou entre em contato pelo WhatsApp.')
     } finally {
