@@ -458,19 +458,6 @@ function App() {
               )}
 
               {currentStep === 2 && (
-                <div className="space-y-6">
-                  {/* Vídeo institucional */}
-                  <div className="space-y-3">
-                    <h3 className="text-lg font-semibold text-gray-700 text-center">
-                      Conheça nossa proposta pedagógica
-                    </h3>
-                    <div className="aspect-video rounded-2xl overflow-hidden bg-gray-100">
-                      {/* TODO: Inserir vídeo institucional do YouTube/Vimeo */}
-                      <div className="w-full h-full flex items-center justify-center text-gray-500">
-                        Player de Vídeo Institucional
-                      </div>
-                    </div>
-                  </div>
 
                   {/* Formulário de estudantes */}
                   <div className="space-y-6">
