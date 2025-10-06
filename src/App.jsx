@@ -272,10 +272,10 @@ function App() {
                 Recebido com sucesso! 🎉
               </h1>
               <p className="text-xl text-gray-600">
-                Obrigado pelo interesse no Colégio Amadeus! Estamos ansiosos para recebê-lo(a).
+                Obrigado pelo interesse no Centro Educacional Amadeus! Estamos ansiosos para recebê-lo(a).
               </p>
               <p className="text-gray-500">
-                Nossa equipe entrará em contato em até 24h para agendar sua visita.
+                Nossa equipe entrará em contato em breve para agendar sua visita.
               </p>
             </div>
 
@@ -283,33 +283,24 @@ function App() {
               <Button 
                 size="lg" 
                 className="w-full bg-green-600 hover:bg-green-700 text-white py-4 text-lg rounded-2xl"
-                onClick={() => window.open('https://wa.me/558499999999?text=Olá! Acabei de preencher o formulário de interesse no Colégio Amadeus e gostaria de agendar minha visita', '_blank')}
+                onClick={() => window.open('https://wa.me/5584981450229?text=Olá! Acabei de preencher o formulário de interesse no Colégio Amadeus e gostaria de agendar minha visita', '_blank')}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 📱 Agendar Agora pelo WhatsApp
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="w-full border-blue-300 text-blue-600 hover:bg-blue-50 py-4 text-lg rounded-2xl"
-                onClick={() => {/* TODO: Inserir link do PDF do material informativo */}}
-              >
-                <Download className="w-5 h-5 mr-2" />
-                📥 Baixar Material Informativo
-              </Button>
+              </Button>             
             </div>
-
+            {/* 
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-gray-700">
                 Enquanto isso, conheça mais sobre o Colégio Amadeus
               </h3>
               <div className="aspect-video rounded-2xl overflow-hidden bg-gray-100">
-                {/* TODO: Inserir vídeo institucional do YouTube/Vimeo */}
+                {/* TODO: Inserir vídeo institucional do YouTube/Vimeo 
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
                   Vídeo Institucional
                 </div>
               </div>
+            */}
             </div>
 
             <div className="space-y-2">
@@ -637,7 +628,7 @@ function App() {
       {/* Botão flutuante do WhatsApp */}
       <div className="fixed bottom-6 right-6 z-50">
         <Button
-          onClick={() => window.open('https://wa.me/558499999999?text=Olá! Gostaria de saber mais sobre o Colégio Amadeus', '_blank')}
+          onClick={() => window.open('https://wa.me/5584981450229?text=Olá! Gostaria de saber mais sobre o Colégio Amadeus', '_blank')}
           className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg animate-pulse"
           title="Fale conosco agora"
         >
