@@ -337,7 +337,7 @@ function App() {
               alt="Colégio Amadeus" 
               className="w-12 h-12 object-contain"
             />
-            <span className="text-xl font-bold text-gray-800">Centro Educacional Amadeus</span>
+            {/* <span className="text-xl font-bold text-gray-800">Centro Educacional Amadeus</span> */}
           </div>
           
           {/* Indicador de progresso */}
@@ -382,7 +382,7 @@ function App() {
               {/* Lema com destaque */}
               <div className="border-t border-b border-white/30 py-4 my-4">
                 <p className="text-lg md:text-xl font-medium text-yellow-300">
-                  Escola Amadeus: Onde Cada Aluno Importa
+                  Escola Amadeus: Onde Cada Aluno Importa!
                 </p>
               </div>
               
