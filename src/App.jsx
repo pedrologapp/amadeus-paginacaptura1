@@ -146,7 +146,7 @@ function App() {
       // Simular sucesso na validação
       return true
       
-      Código real para produção:
+      // Código real para produção:
       const response = await fetch('WEBHOOK_N8N_VALIDACAO_URL', {
         method: 'POST',
         headers: {
@@ -229,7 +229,7 @@ function App() {
       }
       setIsSuccess(true)
       
-
+/*
       const response = await fetch('WEBHOOK_N8N_URL', {
         method: 'POST',
         headers: {
@@ -253,7 +253,7 @@ function App() {
       setIsSubmitting(false)
     }
   }
-
+*/
   const getProgressPercentage = () => {
     return (currentStep / 3) * 100
   }
