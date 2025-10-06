@@ -229,7 +229,7 @@ function App() {
       }
       setIsSuccess(true)
       
-/*
+   /*
       const response = await fetch('WEBHOOK_N8N_URL', {
         method: 'POST',
         headers: {
@@ -247,13 +247,14 @@ function App() {
         throw new Error('Erro no envio')
       }
 
+      */
     } catch (error) {
       alert('Ops! Algo deu errado. Tente novamente ou entre em contato pelo WhatsApp.')
     } finally {
       setIsSubmitting(false)
     }
   }
-*/
+
   const getProgressPercentage = () => {
     return (currentStep / 3) * 100
   }
