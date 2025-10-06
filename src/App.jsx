@@ -454,98 +454,95 @@ function App() {
                   </div>
                 </div>
               )}
-
+              
               {currentStep === 2 && (
-
-                  {/* Formulário de estudantes */}
-                  <div className="space-y-6">
-                    <h3 className="text-xl font-semibold text-gray-800">
-                      Dados do(s) Estudante(s)
-                    </h3>
-                    
-                    {students.map((student, index) => (
-                      <Card key={index} className="p-6 border-2 border-gray-100 rounded-2xl">
-                        <div className="flex justify-between items-center mb-4">
-                          <h4 className="font-medium text-gray-700">
-                            Estudante {index + 1}
-                          </h4>
-                          {students.length > 1 && (
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => removeStudent(index)}
-                              className="text-red-500 hover:text-red-700"
-                            >
-                              Remover
-                            </Button>
+                <div className="space-y-6">
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    Dados do(s) Estudante(s)
+                  </h3>
+                  
+                  {students.map((student, index) => (
+                    <Card key={index} className="p-6 border-2 border-gray-100 rounded-2xl">
+                      <div className="flex justify-between items-center mb-4">
+                        <h4 className="font-medium text-gray-700">
+                          Estudante {index + 1}
+                        </h4>
+                        {students.length > 1 && (
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => removeStudent(index)}
+                            className="text-red-500 hover:text-red-700"
+                          >
+                            Remover
+                          </Button>
+                        )}
+                      </div>
+                      
+                      <div className="space-y-4">
+                        <div>
+                          <Label htmlFor={`student-${index}-nome`}>Nome completo *</Label>
+                          <Input
+                            id={`student-${index}-nome`}
+                            value={student.nome}
+                            onChange={(e) => updateStudent(index, 'nome', e.target.value)}
+                            className="mt-1 rounded-xl"
+                            placeholder="Digite o nome completo do estudante"
+                          />
+                          {errors[`student_${index}_nome`] && (
+                            <p className="text-red-500 text-sm mt-1">{errors[`student_${index}_nome`]}</p>
                           )}
                         </div>
                         
-                        <div className="space-y-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           <div>
-                            <Label htmlFor={`student-${index}-nome`}>Nome completo *</Label>
-                            <Input
-                              id={`student-${index}-nome`}
-                              value={student.nome}
-                              onChange={(e) => updateStudent(index, 'nome', e.target.value)}
-                              className="mt-1 rounded-xl"
-                              placeholder="Digite o nome completo do estudante"
-                            />
-                            {errors[`student_${index}_nome`] && (
-                              <p className="text-red-500 text-sm mt-1">{errors[`student_${index}_nome`]}</p>
+                            <Label htmlFor={`student-${index}-serie`}>Série pretendida *</Label>
+                            <Select onValueChange={(value) => updateStudent(index, 'serie', value)}>
+                              <SelectTrigger className="mt-1 rounded-xl">
+                                <SelectValue placeholder="Selecione a série pretendida" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                {serieOptions.map((serie) => (
+                                  <SelectItem key={serie} value={serie}>{serie}</SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                            {errors[`student_${index}_serie`] && (
+                              <p className="text-red-500 text-sm mt-1">{errors[`student_${index}_serie`]}</p>
                             )}
                           </div>
                           
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                              <Label htmlFor={`student-${index}-serie`}>Série pretendida *</Label>
-                              <Select onValueChange={(value) => updateStudent(index, 'serie', value)}>
-                                <SelectTrigger className="mt-1 rounded-xl">
-                                  <SelectValue placeholder="Selecione a série pretendida" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                  {serieOptions.map((serie) => (
-                                    <SelectItem key={serie} value={serie}>{serie}</SelectItem>
-                                  ))}
-                                </SelectContent>
-                              </Select>
-                              {errors[`student_${index}_serie`] && (
-                                <p className="text-red-500 text-sm mt-1">{errors[`student_${index}_serie`]}</p>
-                              )}
-                            </div>
-                            
-                            <div>
-                              <Label htmlFor={`student-${index}-turno`}>Turno pretendido *</Label>
-                              <Select onValueChange={(value) => updateStudent(index, 'turno', value)}>
-                                <SelectTrigger className="mt-1 rounded-xl">
-                                  <SelectValue placeholder="Selecione o turno pretendido" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                  {turnoOptions.map((turno) => (
-                                    <SelectItem key={turno} value={turno}>{turno}</SelectItem>
-                                  ))}
-                                </SelectContent>
-                              </Select>
-                              {errors[`student_${index}_turno`] && (
-                                <p className="text-red-500 text-sm mt-1">{errors[`student_${index}_turno`]}</p>
-                              )}
-                            </div>
+                          <div>
+                            <Label htmlFor={`student-${index}-turno`}>Turno pretendido *</Label>
+                            <Select onValueChange={(value) => updateStudent(index, 'turno', value)}>
+                              <SelectTrigger className="mt-1 rounded-xl">
+                                <SelectValue placeholder="Selecione o turno pretendido" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                {turnoOptions.map((turno) => (
+                                  <SelectItem key={turno} value={turno}>{turno}</SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                            {errors[`student_${index}_turno`] && (
+                              <p className="text-red-500 text-sm mt-1">{errors[`student_${index}_turno`]}</p>
+                            )}
                           </div>
                         </div>
-                      </Card>
-                    ))}
-                    
-                    {students.length < 3 && (
-                      <Button
-                        variant="outline"
-                        onClick={addStudent}
-                        className="w-full border-2 border-dashed border-gray-300 hover:border-blue-400 text-gray-600 hover:text-blue-600 py-4 rounded-2xl"
-                      >
-                        <Plus className="w-5 h-5 mr-2" />
-                        Adicionar outro estudante
-                      </Button>
-                    )}
-                  </div>
+                      </div>
+                    </Card>
+                  ))}
+                  
+                  {students.length < 3 && (
+                    <Button
+                      variant="outline"
+                      onClick={addStudent}
+                      className="w-full border-2 border-dashed border-gray-300 hover:border-blue-400 text-gray-600 hover:text-blue-600 py-4 rounded-2xl"
+                    >
+                      <Plus className="w-5 h-5 mr-2" />
+                      Adicionar outro estudante
+                    </Button>
+                  )}
                 </div>
               )}
 
