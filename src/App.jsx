@@ -146,7 +146,7 @@ function App() {
       return true
       
       // Código real para produção:
-      const response = await fetch('WEBHOOK_N8N_VALIDACAO_URL', {
+      const response = await fetch('https://n8n.escolaamadeus.com/webhook-test/eduhubamadeus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
