@@ -300,9 +300,9 @@ function App() {
                   Vídeo Institucional
                 </div>
               </div>
-            */}
+          
             </div>
-
+  */}
             <div className="space-y-2">
               <p className="text-sm text-gray-600">Compartilhe com outros pais</p>
               <div className="flex justify-center space-x-4">
