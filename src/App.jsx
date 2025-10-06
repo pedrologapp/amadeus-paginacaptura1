@@ -93,11 +93,12 @@ function App() {
       } else if (responsible.celular.replace(/\D/g, '').length !== 11) {
         newErrors.responsible_celular = 'Celular deve ter 11 dígitos'
       }
-      if (!responsible.email.trim()) {
+     /* if (!responsible.email.trim()) {
         newErrors.responsible_email = 'E-mail é obrigatório'
       } else if (!/\S+@\S+\.\S+/.test(responsible.email)) {
         newErrors.responsible_email = 'E-mail inválido'
       }
+      */
     }
     
     if (step === 2) {
