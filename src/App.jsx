@@ -395,7 +395,7 @@ function App() {
               
               {/* CTA */}
               <p className="text-blue-100 text-base">
-                Agende sua visita gratuita agora
+                Agende sua visita agora para a "Experiência Amadeus"
               </p>
             </CardHeader>
 
