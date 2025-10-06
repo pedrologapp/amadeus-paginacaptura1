@@ -344,7 +344,7 @@ function App() {
             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
               CA
             </div>
-            <span className="text-xl font-bold text-gray-800">Colégio Amadeus</span>
+            <span className="text-xl font-bold text-gray-800">Centro Educacional Amadeus</span>
           </div>
           
           {/* Indicador de progresso */}
@@ -375,12 +375,27 @@ function App() {
       <main className="pt-24 pb-8 px-4">
         <div className="container mx-auto max-w-2xl">
           <Card className="backdrop-blur-sm bg-white/90 border-0 shadow-2xl rounded-3xl overflow-hidden">
-            <CardHeader className="text-center space-y-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8">
-              <CardTitle className="text-3xl font-bold">
-                Venha conhecer o Colégio Amadeus
-              </CardTitle>
-              <p className="text-blue-100 text-lg">
-                Preencha o formulário e agende sua visita
+            <CardHeader className="text-center space-y-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8">
+              {/* Headline principal */}
+              <div className="space-y-3">
+                <CardTitle className="text-3xl md:text-4xl font-bold leading-tight">
+                  Seu filho não é apenas mais um aluno.
+                </CardTitle>
+                <p className="text-xl md:text-2xl font-semibold text-blue-50">
+                  Ele é único. E merece ser tratado assim.
+                </p>
+              </div>
+              
+              {/* Lema com destaque */}
+              <div className="border-t border-b border-white/30 py-4 my-4">
+                <p className="text-lg md:text-xl font-medium text-yellow-300">
+                  Escola Amadeus: Onde Cada Aluno Importa
+                </p>
+              </div>
+              
+              {/* CTA */}
+              <p className="text-blue-100 text-base">
+                Agende sua visita gratuita agora
               </p>
             </CardHeader>
 
