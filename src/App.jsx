@@ -412,8 +412,7 @@ function App() {
                 
                 {/* Lema - Badge estilo moderno */}
                 <div className="inline-flex items-center gap-2 bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-bold text-base shadow-lg">
-                  <span className="text-xl">✨</span>
-                  Onde Cada Aluno Importa
+                  Onde Cada Aluno Importa!
                 </div>
                 
                 {/* CTA */}
