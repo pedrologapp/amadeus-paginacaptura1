@@ -141,7 +141,7 @@ function App() {
       
       
       // Código real para produção:
-      const response = await fetch('https://n8n.escolaamadeus.com/webhook-test/eduhubamadeus', {
+      const response = await fetch('https://webhook.escolaamadeus.com/webhook/eduhubamadeus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -231,7 +231,7 @@ function App() {
       
       
 
-      const response = await fetch('https://n8n.escolaamadeus.com/webhook-test/eduhubamadeus', {
+      const response = await fetch('https://webhook.escolaamadeus.com/webhook/eduhubamadeus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
