@@ -369,8 +369,9 @@ function App() {
       <main className="pt-24 pb-8 px-4">
         <div className="container mx-auto max-w-2xl">
           <Card className="backdrop-blur-sm bg-white/90 border-0 shadow-2xl rounded-3xl overflow-hidden">
+            {/* Headline principal
             <CardHeader className="text-center space-y-6 bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8">
-              {/* Headline principal */}
+            
               <div className="space-y-3">
                 <CardTitle className="text-3xl md:text-4xl font-bold leading-tight">
                   Seu filho não é apenas mais um aluno.
@@ -379,20 +380,48 @@ function App() {
                   Ele é único. E merece ser tratado assim.
                 </p>
               </div>
-              
-              {/* Lema com destaque */}
+               */}
+              {/* Lema com destaque 
               <div className="border-t border-b border-white/30 py-4 my-4">
                 <p className="text-lg md:text-xl font-medium text-yellow-300">
                   Escola Amadeus: Onde Cada Aluno Importa!
                 </p>
               </div>
-              
-              {/* CTA */}
+              */}
+              {/* CTA 
               <p className="text-blue-100 text-base">
                 Agende sua visita agora para a "Experiência Amadeus"
               </p>
             </CardHeader>
-
+        */}
+            <CardHeader className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white p-12 md:p-16">
+              {/* Elemento decorativo de fundo */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-300/10 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
+              
+              <div className="relative z-10 max-w-3xl mx-auto space-y-8">
+                {/* Headline principal */}
+                <div className="space-y-4">
+                  <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                    Seu filho não é apenas<br />mais um aluno.
+                  </h1>
+                  <p className="text-2xl md:text-3xl text-blue-100 font-light">
+                    Ele é único. E merece ser tratado assim.
+                  </p>
+                </div>
+                
+                {/* Lema - Badge estilo moderno */}
+                <div className="inline-flex items-center gap-2 bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-bold text-base shadow-lg">
+                  <span className="text-xl">✨</span>
+                  Onde Cada Aluno Importa
+                </div>
+                
+                {/* CTA */}
+                <p className="text-lg text-blue-50">
+                  Preencha abaixo e agende sua <strong>Experiência Amadeus</strong>
+                </p>
+              </div>
+            </CardHeader>
             <CardContent className="p-8">
               {currentStep === 1 && (
                 <div className="space-y-6">
