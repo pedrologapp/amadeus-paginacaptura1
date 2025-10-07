@@ -412,7 +412,7 @@ function App() {
                 
                 {/* Lema - Badge estilo moderno */}
                 <div className="inline-flex items-center gap-2 bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-bold text-base shadow-lg">
-                  Onde Cada Aluno Importa!
+                  Escola Amadeu: Onde Cada Aluno Importa!
                 </div>
                 
                 {/* CTA */}
