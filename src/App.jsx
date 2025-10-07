@@ -403,7 +403,7 @@ function App() {
               <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
               
               <div className="relative z-10 max-w-3xl mx-auto space-y-8">
-                {/* Headline principal */}
+                {/* Headline principal 
                 <div className="space-y-4">
                   <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                     Seu filho não é apenas<br />mais um aluno.
@@ -412,7 +412,7 @@ function App() {
                     Ele é único. E merece ser tratado assim.
                   </p>
                 </div>
-                
+                */}
                 {/* Lema - Badge estilo moderno */}
                 <div className="inline-flex items-center gap-2 bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-bold text-base shadow-lg">
                   Escola Amadeus: Onde Cada Aluno Importa!
