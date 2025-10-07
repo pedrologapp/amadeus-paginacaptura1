@@ -139,11 +139,6 @@ function App() {
       // TODO: Substituir WEBHOOK_N8N_VALIDACAO_URL pela URL real do webhook de validação
       console.log('Dados do responsável enviados para validação:', responsibleData)
       
-      // Simular delay de validação
-      await new Promise(resolve => setTimeout(resolve, 1500))
-      
-      // Simular sucesso na validação
-      return true
       
       // Código real para produção:
       const response = await fetch('https://n8n.escolaamadeus.com/webhook-test/eduhubamadeus', {
@@ -219,17 +214,9 @@ function App() {
       // Simulação para demonstração - TODO: Substituir WEBHOOK_N8N_URL pela URL real do n8n
       console.log('Dados finais enviados para o n8n:', formData)
       
-      // Simular delay de envio
-      await new Promise(resolve => setTimeout(resolve, 2000))
       
-      // Simular sucesso
-      if (window.fbq) {
-        window.fbq('track', 'CompleteRegistration')
-      }
-      setIsSuccess(true)
-      
-   /*
-      const response = await fetch('WEBHOOK_N8N_URL', {
+
+      const response = await fetch('https://n8n.escolaamadeus.com/webhook-test/eduhubamadeus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -246,7 +233,6 @@ function App() {
         throw new Error('Erro no envio')
       }
 
-      */
     } catch (error) {
       alert('Ops! Algo deu errado. Tente novamente ou entre em contato pelo WhatsApp.')
     } finally {
