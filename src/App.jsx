@@ -163,6 +163,8 @@ function App() {
     }
   }
 
+
+  /*
   const nextStep = async () => {
     if (!validateStep(currentStep)) return
     
@@ -191,7 +193,20 @@ function App() {
       setCurrentStep(currentStep + 1)
     }
   }
+    */
 
+          const nextStep = () => {
+          if (!validateStep(currentStep)) return
+          
+          // Registrar Lead no Facebook Pixel quando avançar do step 1
+          if (currentStep === 1 && window.fbq) {
+            window.fbq('track', 'Lead')
+          }
+          
+          // Avançar para próxima etapa
+          setCurrentStep(currentStep + 1)
+        }
+  
   const prevStep = () => {
     setCurrentStep(currentStep - 1)
   }
