@@ -287,7 +287,7 @@ function App() {
                 onClick={() => window.open('https://wa.me/5584981450229?text=Olá! Acabei de preencher o formulário de interesse no Colégio Amadeus e gostaria de agendar minha visita', '_blank')}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                📱 Agendar Agora pelo WhatsApp
+                📱 Quero conversar agora pelo WhatsApp
               </Button>             
             </div>
             {/* 
@@ -412,7 +412,7 @@ function App() {
                 
                 {/* Lema - Badge estilo moderno */}
                 <div className="inline-flex items-center gap-2 bg-yellow-400 text-blue-900 px-6 py-3 rounded-full font-bold text-base shadow-lg">
-                  Escola Amadeu: Onde Cada Aluno Importa!
+                  Escola Amadeus: Onde Cada Aluno Importa!
                 </div>
                 
                 {/* CTA */}
