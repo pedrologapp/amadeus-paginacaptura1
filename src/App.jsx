@@ -605,12 +605,13 @@ function App() {
                       <p className="text-red-500 text-sm">{errors.agendarWhatsApp}</p>
                     )}
                   </div>
-                  
+                  {/*
                   <div className="bg-blue-50 p-4 rounded-2xl">
                     <p className="text-sm text-blue-800">
                       Após o envio, entraremos em contato para confirmar todos os detalhes.
                     </p>
                   </div>
+                  */}
                 </div>
               )}
 
